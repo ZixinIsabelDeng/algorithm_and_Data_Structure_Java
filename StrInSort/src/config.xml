@@ -1,0 +1,28 @@
+<config>
+	<test driver="ca.concordia.datastructures.StrInSort" method="main" label="Check Student Input Data">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="Check output original array"><regex>14 59 69 34 76 64 26 79 7 65 84 72 13 24 57</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted runs"><regex>We counted 0 DEC runs of length 4</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted structuring compares"><regex>We performed 14 compares during structuring</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted overall compares"><regex>We performed 76 compares overall</regex></check>
+		</mark>
+		<mark grade="20">
+			<check label="Check properly counted swaps"><regex>We performed 52 swaps overall</regex></check>
+		</mark>
+		<mark grade="10">
+			<check label="Check properly counted reversals"><regex>We performed 3 reversals of runs in DEC order</regex></check>
+		</mark>
+		<mark grade="30">
+			<check label="Check output sorted array"><regex>7 13 14 24 26 34 57 59 64 65 69 72 76 79 84</regex></check>
+		</mark>
+	</test>
+
+</config>
